@@ -13,7 +13,7 @@ function getDiceData(count){
     var index = 1;
     while(count > 0){
         var dice_value = getRandomDice();
-        dice_data.set(index, dice_value );
+        dice_data.set("Throw " + index, dice_value );
         index++;
         count--;
     }
@@ -21,3 +21,27 @@ function getDiceData(count){
 }
 
 getDiceData(10);
+
+//task 1.d & 1.e - repeat until any no has a count of 10
+
+//task 2 - find from a group of 50 people having Birthdays in the same month
+
+// var BdaeData = new Map();
+// var index = 1;
+// function getBdaeData(count){
+//     while(count > 0){
+//         var month = Math.floor((Math.random()*12)+1);
+//         BdaeData.set("Person " + index, month);
+//         index++;
+//         count--;
+//     }
+//     console.log(BdaeData);
+// }
+
+// getBdaeData(50);
+// BdaeData.forEach(getIndex);
+// function getIndex(key, index, map){
+//     if (key == 1) {
+//         console.log(index);
+//     }
+// }
